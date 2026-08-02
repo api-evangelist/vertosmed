@@ -1,8 +1,25 @@
 aid: vertosmed
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vertosmed.png
 name: Vertosmed
-description: 'Vertosmed is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Vertos Medical (vertosmed.com) is a medical device company founded in 2005 and based in
+  Aliso Viejo, California, focused on minimally invasive treatments for lumbar spinal stenosis (LSS).
+  Its proprietary Mild (Minimally Invasive Lumbar Decompression) procedure is an image-guided outpatient
+  treatment that removes a major root cause of LSS through an incision smaller than a baby aspirin, without
+  implants, general anesthesia, or stitches. Vertos Medical was acquired by Stryker Corporation in 2024 and
+  is now part of Stryker''s Interventional Spine business; vertosmed.com now redirects to stryker.com. As a
+  clinical medical-device manufacturer, Vertos Medical publishes no public developer, API, SDK, or integration
+  surface.'
 url: https://raw.githubusercontent.com/api-evangelist/vertosmed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Medical Device
+- Healthcare
+- Spine
+- Interventional Spine
+- Minimally Invasive
+- Lumbar Spinal Stenosis
+- Stryker
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vertosmed-domain-security.yml
 - type: Website
   url: https://vertosmed.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
